@@ -1,0 +1,13 @@
+
+pip install flask==0.9
+pip install flask-login
+pip install flask-openid
+pip install flask-mail
+pip install sqlalchemy==0.7.9
+pip install flask-sqlalchemy==0.16
+pip install sqlalchemy-migrate
+pip install flask-whooshalchemy==0.54a
+pip install flask-wtf
+pip install pytz==2013b
+pip install flask-babel==0.8
+pip install flup
