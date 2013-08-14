@@ -25,4 +25,6 @@ def challengeone():
 def challengetwo():
     return render_template('challengetwo.html')
 
-
+@app.route('/challengethree')
+def challengethree():
+    return render_template('challengethree.html')
