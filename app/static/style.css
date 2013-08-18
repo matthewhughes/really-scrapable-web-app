@@ -49,3 +49,13 @@ body h6 {
   margin: 0em 1em;
   padding: 0.2em 0.2em;
 }
+/* FOOTER STYLES */
+footer {
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9);
+  background-image: -moz-linear-gradient(top, #ffffff, #f9f9f9);
+  background-image: -o-linear-gradient(top, #ffffff, #f9f9f9);
+  background-image: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  border-bottom: 1px dotted black;
+}

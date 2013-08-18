@@ -52,37 +52,49 @@ body {
 
 /* HEADER STYLES */
 
-	.header-container { 
+.header-container { 
 
-		padding: 0.5em 0.3em;
-		margin-bottom: 1em;
-		
-		.gradient(#f9f9f9, #ffffff);
-		border-top: 1px dotted #000000;
+	padding: 0.5em 0.3em;
+	margin-bottom: 1em;
 	
-		
+	.gradient(#f9f9f9, #ffffff);
+	border-top: 1px dotted #000000;
 
-		nav { float: left;}
-		header { 
+	
 
-			border-right: 1px solid @dark-color;
-			float: left;
+	nav { float: left;}
+	header { 
 
-			a{
-				color: @dark-color;
+		border-right: 1px solid @dark-color;
+		float: left;
 
-			}
-
-			}
-
-		a {
-			line-height: 1em;
-			text-decoration: none;
-			font-family: 'Droid Serif', serif;
-			margin: 0em 1em;
-			
-			padding: 0.2em 0.2em;
-			
+		a{
+			color: @dark-color;
 
 		}
+
+		}
+
+	a {
+		line-height: 1em;
+		text-decoration: none;
+		font-family: 'Droid Serif', serif;
+		margin: 0em 1em;
+		
+		padding: 0.2em 0.2em;
+		
+
 	}
+}
+
+/* FOOTER STYLES */
+
+footer {
+
+	.gradient(#ffffff, #f9f9f9 );
+	border-bottom: 1px dotted black;
+	padding: none;
+
+	p { margin: none; }
+
+}
