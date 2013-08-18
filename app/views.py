@@ -1,6 +1,8 @@
 from flask import render_template
 from app import app
 
+PRIME_MINISTER = {'name': "Kevin Rudd", 'age': 55, 'party': "labor", 'country': "Australia", 'children': 3 }
+
 @app.route('/')
 @app.route('/index')
 
@@ -34,9 +36,9 @@ def challengefive():
 @app.route('/api/<standard>')
 def api(standard):
     if standard == 'json':
-        return "json"
+        return render_template('rudd.json') 
     elif standard == 'xml':
-        return "xml"
+        return render_template('rudd.xml') 
     else:
         return "Wrong type"
 
