@@ -1,6 +1,55 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+/* PARAMETRIC MIXINS */
+
+.gradient (@from, @to) {
+	background-color: @from;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+	background-image: -webkit-linear-gradient(top, @from, @to);
+	background-image:    -moz-linear-gradient(top, @from, @to);
+	background-image:      -o-linear-gradient(top, @from, @to);
+	background-image:         linear-gradient(to bottom, @from, @to);
+}
+
+/* COLOR MIXINS*/
+
+@dark-color: #313131; 
+
+/*       */
+
+/* GENERAL STYLES */
+
 
 body {
-	color: black;
-	font-family: 'Droid Serif';
+	
+/*	.gradient(#fefefe, #ededed);*/
+
+
+	h1,h2,h3,h4,h5,h6{
+		
+		font-family: 'Droid Serif', serif;
+	
+	}
+
+
+	p {
+		font-family: 'Droid Sans', sans-serif;
+	}
+
+	nav { 
+
+		position: fixed;
+		top: 0;
+		background-color: #cdcdcd;
+		width: 100%;
+		z-index: 1000;
+
+		a {
+			text-decoration: none;
+			font-family: 'Droid Serif', serif;
+			margin: 0em 1em;
+			color: @dark-color;
+
+		}
+	}
+
 }

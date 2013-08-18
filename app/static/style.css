@@ -1,3 +1,31 @@
+/* PARAMETRIC MIXINS */
+/* COLOR MIXINS*/
+/*       */
+/* GENERAL STYLES */
 body {
-  color: black;
+  /*	.gradient(#fefefe, #ededed);*/
+
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Droid Serif', serif;
+}
+body p {
+  font-family: 'Droid Sans', sans-serif;
+}
+body nav {
+  position: fixed;
+  top: 0;
+  background-color: #cdcdcd;
+  z-index: 1000;
+}
+body nav a {
+  text-decoration: none;
+  font-family: 'Droid Serif', serif;
+  margin: 0em 1em;
+  color: #313131;
 }
