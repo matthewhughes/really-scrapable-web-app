@@ -2,6 +2,11 @@
 /* COLOR MIXINS*/
 /*       */
 /* GENERAL STYLES */
+/* LINK STYLES */
+a {
+  text-decoration: none;
+  color: #de3232;
+}
 body {
   /*	.gradient(#fefefe, #ededed);*/
 
@@ -18,10 +23,8 @@ body p {
   font-family: 'Droid Sans', sans-serif;
 }
 body nav {
-  position: fixed;
-  top: 0;
+  padding: 0.3em 0.3em;
   background-color: #cdcdcd;
-  z-index: 1000;
 }
 body nav a {
   text-decoration: none;
