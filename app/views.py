@@ -34,6 +34,9 @@ def challengefour():
 def challengefive():
     return render_template('challengefive.html')
 
+@app.route('/challengesix')
+def challengesix():
+    return render_template('sixsorry.html')
 '''
 @app.route('/challengesix', methods = ['GET', 'POST'])
 def challengesix():
