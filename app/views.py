@@ -27,6 +27,10 @@ def challengethree():
 def challengefour():
     return render_template('challengefour.html')
 
+@app.route('/challengefive')
+def challengefive():
+    return render_template('challengefive.html')
+
 @app.route('/api/<standard>')
 def api(standard):
     if standard == 'json':
