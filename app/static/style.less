@@ -84,6 +84,33 @@ a {
 
 body {
 	
+	height: 100%;
+	background-image: url('images/main-background.png');
+	font-family: 'Droid Sans', sans-serif;
+	margin: 0px 0px;	
+
+	h1,h2,h3,h4,h5,h6{
+		
+		font-family: 'Droid Serif', serif;
+	
+	}
+
+
+	p {
+		
+	}
+
+	.main-container { 
+		min-height: 100%;
+		position: relative;
+		padding-bottom: 62px;
+		padding-top: 3em;
+		height: 100%;
+		margin: 0 auto -3em;
+
+		
+
+	}
 
 /* TABLE STYLES */
 
@@ -120,33 +147,6 @@ table {
 
 	}
 }
-
-	height: 100%;
-/*	.gradient(#fefefe, #ededed);*/
-
-	
-	background-image: url('images/main-background.png');
-	font-family: 'Droid Sans', sans-serif;
-	margin: 0px 0px;	
-
-
-	h1,h2,h3,h4,h5,h6{
-		
-		font-family: 'Droid Serif', serif;
-	
-	}
-
-
-	p {
-		
-	}
-
-	.main-container { 
-		min-height: 100%;
-		position: relative;
-		padding-bottom: 62px;
-		padding-top: 3em;}
-
 
 }
 
@@ -192,24 +192,29 @@ table {
 
 /* FOOTER STYLES */
 
-footer {
+.footer-container {
 
 	.gradient(#ffffff, #f9f9f9 );
 	border-top: 1px dotted black;
-	padding: none;
-	position: absolute;
+	padding: 0 0;
+	left: 0;
 
-	bottom: 0;
+	bottom: 0px;
 	
 	width: 100%;
-	margin: none;
+	margin: 0 0;
 	
-	overflow: hidden;
-	height: 52px;
+
+	height: auto;
 
 
 	p { padding-left: 1em;
 		
 		 }
 
+		 clear: both;
+
 }
+
+.push, .footer-container { clear: both; height: 4em;}
+
