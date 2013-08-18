@@ -14,7 +14,7 @@
 /* COLOR MIXINS*/
 
 @dark-color: #313131; 
-@green-color: #329732;
+@green-color: #328732;
 
 /*       */
 
@@ -47,19 +47,42 @@ body {
 		
 	}
 
-	nav { 
 
-		padding: 0.3em 0.3em;
-		background-color: #cdcdcd;
+}
+
+/* HEADER STYLES */
+
+	.header-container { 
+
+		padding: 0.5em 0.3em;
+		margin-bottom: 1em;
+		
+		.gradient(#f9f9f9, #ffffff);
+		border-top: 1px dotted #000000;
+	
 		
 
+		nav { float: left;}
+		header { 
+
+			border-right: 1px solid @dark-color;
+			float: left;
+
+			a{
+				color: @dark-color;
+
+			}
+
+			}
+
 		a {
+			line-height: 1em;
 			text-decoration: none;
 			font-family: 'Droid Serif', serif;
 			margin: 0em 1em;
-			color: @dark-color;
+			
+			padding: 0.2em 0.2em;
+			
 
 		}
 	}
-
-}

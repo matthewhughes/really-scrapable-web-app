@@ -5,7 +5,7 @@
 /* LINK STYLES */
 a {
   text-decoration: none;
-  color: #329732;
+  color: #328732;
 }
 body {
   /*	.gradient(#fefefe, #ededed);*/
@@ -20,13 +20,32 @@ body h5,
 body h6 {
   font-family: 'Droid Serif', serif;
 }
-body nav {
-  padding: 0.3em 0.3em;
-  background-color: #cdcdcd;
+/* HEADER STYLES */
+.header-container {
+  padding: 0.5em 0.3em;
+  margin-bottom: 1em;
+  background-color: #f9f9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #ffffff);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #ffffff);
+  background-image: -o-linear-gradient(top, #f9f9f9, #ffffff);
+  background-image: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  border-top: 1px dotted #000000;
 }
-body nav a {
+.header-container nav {
+  float: left;
+}
+.header-container header {
+  border-right: 1px solid #313131;
+  float: left;
+}
+.header-container header a {
+  color: #313131;
+}
+.header-container a {
+  line-height: 1em;
   text-decoration: none;
   font-family: 'Droid Serif', serif;
   margin: 0em 1em;
-  color: #313131;
+  padding: 0.2em 0.2em;
 }
