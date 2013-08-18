@@ -22,17 +22,58 @@
 
 @dark-color: #313131; 
 @green-color: #328732;
+@mid-color: #9a9a9a;
+
 
 /*       */
 
 /* GENERAL STYLES */
+
+/* ABOUT US STYLES */
+
+.aboutus {
+
+	li, ul { list-style-type: none; }
+
+	li { 
+		margin-bottom: 0.3em; 
+		float: left;
+		margin-right: 0.5em;
+
+		&::after{
+
+			content: '//';
+			padding-left: 0.5em;
+			color: @mid-color;
+
+		}
+
+	}
+
+	ul { 
+		padding-left: 0; 
+
+	}
+
+}
 
 /* LINK STYLES */
 
 a { 
 	text-decoration: none;
 	color: @green-color;
+	.transition;
 
+
+	&:hover {
+
+		color: darken(@green-color, 20%);
+		.transition()
+
+	}
+
+
+/* BODY STYLES */
 
 }
 

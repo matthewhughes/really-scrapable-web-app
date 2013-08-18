@@ -2,10 +2,41 @@
 /* COLOR MIXINS*/
 /*       */
 /* GENERAL STYLES */
+/* ABOUT US STYLES */
+.aboutus li,
+.aboutus ul {
+  list-style-type: none;
+}
+.aboutus li {
+  margin-bottom: 0.3em;
+  float: left;
+  margin-right: 0.5em;
+}
+.aboutus li::after {
+  content: '//';
+  padding-left: 0.5em;
+  color: #9a9a9a;
+}
+.aboutus ul {
+  padding-left: 0;
+}
 /* LINK STYLES */
 a {
   text-decoration: none;
   color: #328732;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  /* BODY STYLES */
+
+}
+a:hover {
+  color: #163d16;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 body {
   height: 100%;
