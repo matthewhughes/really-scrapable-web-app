@@ -1,4 +1,3 @@
-
 pip install flask==0.9
 pip install flask-login
 pip install flask-openid
@@ -11,3 +10,4 @@ pip install flask-wtf
 pip install pytz==2013b
 pip install flask-babel==0.8
 pip install flup
+pip install -e 'git+http://github.com/fredj/flask-jsonify.git#egg=flask-jsonify'
