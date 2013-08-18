@@ -22,3 +22,20 @@ def challengetwo():
 @app.route('/challengethree')
 def challengethree():
     return render_template('challengethree.html')
+
+@app.route('/challengefour')
+def challengefour():
+    return render_template('challengefour.html')
+
+@app.route('/api/<standard>')
+def api(standard):
+    if standard == 'json':
+        return "json"
+    elif standard == 'xml':
+        return "xml"
+    else:
+        return "Wrong type"
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('page_not_found.html'), 404
