@@ -11,6 +11,13 @@
 	background-image:         linear-gradient(to bottom, @from, @to);
 }
 
+.transition (@duration: 0.2s, @ease: ease-out) {
+	-webkit-transition: all @duration @ease;
+	-moz-transition: all @duration @ease;
+	-o-transition: all @duration @ease; 
+	transition: all @duration @ease;
+}
+
 /* COLOR MIXINS*/
 
 @dark-color: #313131; 
@@ -31,9 +38,14 @@ a {
 
 body {
 	
+
+	height: 100%;
 /*	.gradient(#fefefe, #ededed);*/
 
+	
+	background-image: url('images/main-background.png');
 	font-family: 'Droid Sans', sans-serif;
+	margin: 0px 0px;	
 
 
 	h1,h2,h3,h4,h5,h6{
@@ -47,6 +59,12 @@ body {
 		
 	}
 
+	.main-container { 
+		min-height: 100%;
+		position: relative;
+		padding-bottom: 62px;
+		padding-top: 3em;}
+
 
 }
 
@@ -54,35 +72,38 @@ body {
 
 .header-container { 
 
-	padding: 0.5em 0.3em;
-	margin-bottom: 1em;
 	
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
 	.gradient(#f9f9f9, #ffffff);
-	border-top: 1px dotted #000000;
-
+	border-bottom: 1px dotted #000000;
 	
+	line-height: 52px;
 
 	nav { float: left;}
+	
 	header { 
 
-		border-right: 1px solid @dark-color;
+		
+		&::after {content: '|';} ;
+
 		float: left;
 
 		a{
 			color: @dark-color;
-
 		}
 
-		}
+	}
 
 	a {
+		
+		padding-left: 1em;
 		line-height: 1em;
 		text-decoration: none;
-		font-family: 'Droid Serif', serif;
-		margin: 0em 1em;
-		
-		padding: 0.2em 0.2em;
-		
+		font-family: 'Droid Sans', serif;
+		margin: 0em 1em;		
 
 	}
 }
@@ -92,9 +113,21 @@ body {
 footer {
 
 	.gradient(#ffffff, #f9f9f9 );
-	border-bottom: 1px dotted black;
+	border-top: 1px dotted black;
 	padding: none;
+	position: absolute;
 
-	p { margin: none; }
+	bottom: 0;
+	
+	width: 100%;
+	margin: none;
+	
+	overflow: hidden;
+	height: 52px;
+
+
+	p { padding-left: 1em;
+		
+		 }
 
 }

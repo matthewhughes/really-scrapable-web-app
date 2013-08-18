@@ -8,9 +8,12 @@ a {
   color: #328732;
 }
 body {
+  height: 100%;
   /*	.gradient(#fefefe, #ededed);*/
 
+  background-image: url('images/main-background.png');
   font-family: 'Droid Sans', sans-serif;
+  margin: 0px 0px;
 }
 body h1,
 body h2,
@@ -20,34 +23,45 @@ body h5,
 body h6 {
   font-family: 'Droid Serif', serif;
 }
+body .main-container {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 62px;
+  padding-top: 3em;
+}
 /* HEADER STYLES */
 .header-container {
-  padding: 0.5em 0.3em;
-  margin-bottom: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   background-color: #f9f9f9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#ffffff));
   background-image: -webkit-linear-gradient(top, #f9f9f9, #ffffff);
   background-image: -moz-linear-gradient(top, #f9f9f9, #ffffff);
   background-image: -o-linear-gradient(top, #f9f9f9, #ffffff);
   background-image: linear-gradient(to bottom, #f9f9f9, #ffffff);
-  border-top: 1px dotted #000000;
+  border-bottom: 1px dotted #000000;
+  line-height: 52px;
 }
 .header-container nav {
   float: left;
 }
 .header-container header {
-  border-right: 1px solid #313131;
   float: left;
+}
+.header-container header::after {
+  content: '|';
 }
 .header-container header a {
   color: #313131;
 }
 .header-container a {
+  padding-left: 1em;
   line-height: 1em;
   text-decoration: none;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Droid Sans', serif;
   margin: 0em 1em;
-  padding: 0.2em 0.2em;
 }
 /* FOOTER STYLES */
 footer {
@@ -57,5 +71,15 @@ footer {
   background-image: -moz-linear-gradient(top, #ffffff, #f9f9f9);
   background-image: -o-linear-gradient(top, #ffffff, #f9f9f9);
   background-image: linear-gradient(to bottom, #ffffff, #f9f9f9);
-  border-bottom: 1px dotted black;
+  border-top: 1px dotted black;
+  padding: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: none;
+  overflow: hidden;
+  height: 52px;
+}
+footer p {
+  padding-left: 1em;
 }
