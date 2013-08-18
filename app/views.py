@@ -1,5 +1,6 @@
-from flask import render_template
+from flask import render_template, flash, redirect
 from app import app
+from forms import LoginForm
 
 PRIME_MINISTER = {'name': "Kevin Rudd", 'age': 55, 'party': "labor", 'country': "Australia", 'children': 3 }
 
@@ -32,6 +33,11 @@ def challengefour():
 @app.route('/challengefive')
 def challengefive():
     return render_template('challengefive.html')
+
+@app.route('/challengesix', methods = ['GET', 'POST'])
+def challengesix():
+    form = LoginForm()
+    return render_template('challengesix.html', form = form)
 
 @app.route('/api/<standard>')
 def api(standard):

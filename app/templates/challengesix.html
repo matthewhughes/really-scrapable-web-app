@@ -23,14 +23,23 @@
 			<a href="/challengeone">Challenge One</a>
 			<a href="/challengetwo">Challenge Two</a>
 			<a href="/challengethree">Challenge Three</a>
-			<a href ="/challengefour">Challenge Four</a>
+			<a href="/challengefour">Challenge Four</a>
 			<a href="/challengefive">Challenge Five</a>
+			<a href="/challengesix">Challenge Six</a>
 		</nav>
 	</div>
-
-
 	<section class="container-fluid">
-
+		<h2>Challenge Six - Dealing With Authentication</h2>
+		<p>This challenge involves scraping some content that is hidden behind some authentication. Don't worry. I'll make it easy for you. The username is <b>scraper</b> and the password is <b>veryscrapable</b></p>
+		<h3>Login</h3>
+		<form action="" method="post" name="login">
+			{{form.hidden_tag()}}
+			<p>Please enter your username</p><br />
+			{{form.username(size=40)}} <br />
+			<p>Please enter your password</p><br />
+			{{form.password(size=40)}}
+		    <p><input type="submit" value="Sign In"></p>
+		</form>
 	</section>
 	<footer>
 	<p>Made with love by <a href="http://www.matthewhughes.co.uk">Matthew Hughes</a> in Liverpool and <a href="http://dillywilly.com">Nadil Bourkadi</a> in Essex.</p>
