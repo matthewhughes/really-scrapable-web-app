@@ -18,6 +18,11 @@
 	transition: all @duration @ease;
 }
 
+/* FONT MIXINS */
+
+@serif-font: 'Droid Serif', serif;
+@sans-serif-font: 'Droid Sans', sans-serif;
+
 /* COLOR MIXINS*/
 
 @dark-color: #313131; 
@@ -79,6 +84,42 @@ a {
 
 body {
 	
+
+/* TABLE STYLES */
+
+table {
+
+	box-shadow: 0 0 4px #cacaca;
+
+	br { display: none;}
+	
+	tbody{
+
+		tr{ 
+
+			th{
+
+
+			line-height: 42px;
+			font-size: 20px;
+			padding: 0.25em 0.25em;
+			.gradient(#fefefe, #ffffff);
+			box-shadow: inset 0 0 4px #cacaca;
+			
+		}
+
+			td{
+
+				padding: 0.25em 0.5em;
+				.gradient(#fefefe, #ffffff);
+				box-shadow: inset 0 0 4px #cacaca;
+
+			}
+
+		}
+
+	}
+}
 
 	height: 100%;
 /*	.gradient(#fefefe, #ededed);*/

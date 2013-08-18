@@ -1,4 +1,5 @@
 /* PARAMETRIC MIXINS */
+/* FONT MIXINS */
 /* COLOR MIXINS*/
 /*       */
 /* GENERAL STYLES */
@@ -39,12 +40,42 @@ a:hover {
   transition: all 0.2s ease-out;
 }
 body {
+  /* TABLE STYLES */
+
   height: 100%;
   /*	.gradient(#fefefe, #ededed);*/
 
   background-image: url('images/main-background.png');
   font-family: 'Droid Sans', sans-serif;
   margin: 0px 0px;
+}
+body table {
+  box-shadow: 0 0 4px #cacaca;
+}
+body table br {
+  display: none;
+}
+body table tbody tr th {
+  line-height: 42px;
+  font-size: 20px;
+  padding: 0.25em 0.25em;
+  background-color: #fefefe;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #fefefe, #ffffff);
+  background-image: -moz-linear-gradient(top, #fefefe, #ffffff);
+  background-image: -o-linear-gradient(top, #fefefe, #ffffff);
+  background-image: linear-gradient(to bottom, #fefefe, #ffffff);
+  box-shadow: inset 0 0 4px #cacaca;
+}
+body table tbody tr td {
+  padding: 0.25em 0.5em;
+  background-color: #fefefe;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #fefefe, #ffffff);
+  background-image: -moz-linear-gradient(top, #fefefe, #ffffff);
+  background-image: -o-linear-gradient(top, #fefefe, #ffffff);
+  background-image: linear-gradient(to bottom, #fefefe, #ffffff);
+  box-shadow: inset 0 0 4px #cacaca;
 }
 body h1,
 body h2,
