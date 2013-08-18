@@ -18,10 +18,7 @@ body p {
   font-family: 'Droid Sans', sans-serif;
 }
 body nav {
-  position: fixed;
-  top: 0;
   background-color: #cdcdcd;
-  z-index: 1000;
 }
 body nav a {
   text-decoration: none;
