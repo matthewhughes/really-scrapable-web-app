@@ -58,10 +58,9 @@ body h6 {
 body .main-container {
   min-height: 100%;
   position: relative;
-  padding-bottom: 62px;
+  margin: 0 auto -52px;
   padding-top: 3em;
   height: 100%;
-  margin: 0 auto -3em;
 }
 body table {
   box-shadow: 0 0 4px #cacaca;
@@ -126,6 +125,10 @@ body table tbody tr td {
   margin: 0em 1em;
 }
 /* FOOTER STYLES */
+html {
+  height: 100%;
+  padding-bottom: 0;
+}
 .footer-container {
   background-color: #ffffff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f9f9f9));
@@ -136,17 +139,18 @@ body table tbody tr td {
   border-top: 1px dotted black;
   padding: 0 0;
   left: 0;
+  position: relative;
+  display: block;
   bottom: 0px;
   width: 100%;
   margin: 0 0;
-  height: auto;
+  height: 52px;
   clear: both;
 }
 .footer-container p {
   padding-left: 1em;
 }
-.push,
-.footer-container {
-  clear: both;
-  height: 4em;
+.footer-container,
+.push {
+  height: 52px;
 }

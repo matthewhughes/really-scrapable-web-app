@@ -36,6 +36,8 @@
 
 /* ABOUT US STYLES */
 
+
+
 .aboutus {
 
 	li, ul { list-style-type: none; }
@@ -103,10 +105,10 @@ body {
 	.main-container { 
 		min-height: 100%;
 		position: relative;
-		padding-bottom: 62px;
+	margin: 0 auto -52px;
 		padding-top: 3em;
 		height: 100%;
-		margin: 0 auto -3em;
+
 
 		
 
@@ -192,12 +194,17 @@ table {
 
 /* FOOTER STYLES */
 
+html{ height: 100%; padding-bottom: 0;}
+
 .footer-container {
 
 	.gradient(#ffffff, #f9f9f9 );
 	border-top: 1px dotted black;
 	padding: 0 0;
 	left: 0;
+	position: relative;
+	clear:both;
+	display:block;
 
 	bottom: 0px;
 	
@@ -205,7 +212,7 @@ table {
 	margin: 0 0;
 	
 
-	height: auto;
+	height: 52px;
 
 
 	p { padding-left: 1em;
@@ -216,5 +223,6 @@ table {
 
 }
 
-.push, .footer-container { clear: both; height: 4em;}
+.footer-container, .push {height: 52px;}
+
 
