@@ -5,11 +5,12 @@
 /* LINK STYLES */
 a {
   text-decoration: none;
-  color: #de3232;
+  color: #329732;
 }
 body {
   /*	.gradient(#fefefe, #ededed);*/
 
+  font-family: 'Droid Sans', sans-serif;
 }
 body h1,
 body h2,
@@ -18,9 +19,6 @@ body h4,
 body h5,
 body h6 {
   font-family: 'Droid Serif', serif;
-}
-body p {
-  font-family: 'Droid Sans', sans-serif;
 }
 body nav {
   padding: 0.3em 0.3em;
