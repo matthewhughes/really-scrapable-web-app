@@ -1,12 +1,6 @@
 from flask import render_template
 from app import app
 
-homepage = ''' 
-<h2>Really Scrapable Web App is a tool to learn about data science</h1>
-<p>Super cool, right? There are lots of things to scrape on this website. But let's start off easy.</p>
-<h1>Write a scraper that yanks this line and prints it to the console </h1>
-'''
-
 @app.route('/')
 @app.route('/index')
 
