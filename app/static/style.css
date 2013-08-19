@@ -58,11 +58,12 @@ body h6 {
 body .main-container {
   min-height: 100%;
   position: relative;
-  margin: 0 auto -52px;
+  padding: 0 auto -52px;
   height: 100%;
 }
 body table {
   box-shadow: 0 0 4px #cacaca;
+  margin-top: 1em;
 }
 body table br {
   display: none;
@@ -101,6 +102,7 @@ body table tbody tr td {
   background-image: linear-gradient(to bottom, #f9f9f9, #ffffff);
   border-bottom: 1px dotted #000000;
   line-height: 52px;
+  z-index: 99999;
 }
 .header-container nav {
   float: left;
@@ -113,6 +115,7 @@ body table tbody tr td {
 }
 .header-container header a {
   color: #313131;
+  z-index: 100000;
 }
 .header-container a {
   padding-left: 1em;
@@ -123,7 +126,7 @@ body table tbody tr td {
 }
 /* FOOTER STYLES */
 html {
-  height: 100%;
+  height: 90%;
   padding-bottom: 0;
 }
 .footer-container {
@@ -138,7 +141,7 @@ html {
   left: 0;
   right: 0;
   position: fixed;
-  display: block;
+  display: inline-block;
   bottom: 0px;
   width: 100%;
   margin: 0 0;

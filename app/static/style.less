@@ -105,7 +105,9 @@ body {
 	.main-container { 
 		min-height: 100%;
 		position: relative;
-		margin: 0 auto -52px;
+
+		padding: 0 auto -52px;
+
 		height: 100%;
 
 
@@ -118,6 +120,7 @@ body {
 table {
 
 	box-shadow: 0 0 4px #cacaca;
+	margin-top: 1em;
 
 	br { display: none;}
 	
@@ -162,6 +165,7 @@ table {
 	border-bottom: 1px dotted #000000;
 	
 	line-height: 52px;
+	z-index: 99999;
 
 	nav { float: left;}
 	
@@ -174,6 +178,7 @@ table {
 
 		a{
 			color: @dark-color;
+			z-index: 100000;
 		}
 
 	}
@@ -191,7 +196,7 @@ table {
 
 /* FOOTER STYLES */
 
-html{ height: 100%; padding-bottom: 0;}
+html{ height: 90%; padding-bottom: 0;}
 
 .footer-container {
 
@@ -202,7 +207,7 @@ html{ height: 100%; padding-bottom: 0;}
 	right: 0;
 	position: fixed;
 	clear:both;
-	display:block;
+	display:inline-block;
 
 	bottom: 0px;
 	
