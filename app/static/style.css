@@ -100,7 +100,7 @@ body table tbody tr td {
   background-image: -moz-linear-gradient(top, #f9f9f9, #ffffff);
   background-image: -o-linear-gradient(top, #f9f9f9, #ffffff);
   background-image: linear-gradient(to bottom, #f9f9f9, #ffffff);
-  border-bottom: 1px dotted #000000;
+  box-shadow: -1px 0px 3px #9a9a9a;
   line-height: 52px;
   z-index: 99999;
 }
@@ -136,7 +136,7 @@ html {
   background-image: -moz-linear-gradient(top, #ffffff, #f9f9f9);
   background-image: -o-linear-gradient(top, #ffffff, #f9f9f9);
   background-image: linear-gradient(to bottom, #ffffff, #f9f9f9);
-  border-top: 1px dotted black;
+  box-shadow: 1px 0px 3px #9a9a9a;
   padding: 0 0;
   left: 0;
   right: 0;
