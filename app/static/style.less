@@ -26,7 +26,7 @@
 /* COLOR MIXINS*/
 
 @dark-color: #313131; 
-@green-color: #328732;
+@green-color: #327732;
 @mid-color: #9a9a9a;
 @light-color: #f9f9f9;
 
@@ -95,6 +95,8 @@ body {
 	h1,h2,h3,h4,h5,h6{
 		
 		font-family: 'Droid Serif', serif;
+		color: @green-color;
+		text-shadow: 0px 0px 5px darken(@light-color, 3%);
 	
 	}
 
@@ -122,7 +124,7 @@ table {
 
 	box-shadow: 0 0 4px #cacaca;
 	margin-top: 1em;
-	
+
 
 	br { display: none;}
 	

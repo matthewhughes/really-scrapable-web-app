@@ -24,7 +24,7 @@
 /* LINK STYLES */
 a {
   text-decoration: none;
-  color: #328732;
+  color: #327732;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
@@ -33,7 +33,7 @@ a {
 
 }
 a:hover {
-  color: #163d16;
+  color: #142f14;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
@@ -54,6 +54,8 @@ body h4,
 body h5,
 body h6 {
   font-family: 'Droid Serif', serif;
+  color: #327732;
+  text-shadow: 0px 0px 5px #f1f1f1;
 }
 body .main-container {
   min-height: 100%;
