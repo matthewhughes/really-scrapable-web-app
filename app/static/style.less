@@ -22,6 +22,7 @@
 
 @serif-font: 'Droid Serif', serif;
 @sans-serif-font: 'Droid Sans', sans-serif;
+@handwriting-font: 'Calligraffitti', cursive;
 
 /* COLOR MIXINS*/
 
@@ -29,6 +30,7 @@
 @green-color: #327732;
 @mid-color: #9a9a9a;
 @light-color: #f9f9f9;
+@brown-color: #886800;
 
 
 /*       */
@@ -92,13 +94,18 @@ body {
 	font-family: 'Droid Sans', sans-serif;
 	margin: 0px 0px;	
 
+/* HEADING STYLES */
+
 	h1,h2,h3,h4,h5,h6{
 		
 		font-family: 'Droid Serif', serif;
 		color: @green-color;
 		text-shadow: 0px 0px 5px darken(@light-color, 3%);
-	
+		line-height: 21px;
+
 	}
+
+	h4 { color: @dark-color;}
 
 
 	p {
@@ -171,6 +178,7 @@ table {
 	
 	line-height: 52px;
 	z-index: 99999;
+	margin-bottom: 1em;
 
 	nav { float: left;}
 	
@@ -216,6 +224,7 @@ html{ height: 90%; padding-bottom: 0;}
 	position: fixed;
 	clear:both;
 	display:inline-block;
+	z-index: 10000;
 
 	bottom: 0px;
 	
@@ -236,4 +245,27 @@ html{ height: 90%; padding-bottom: 0;}
 
 .footer-container, .push {height: 52px;}
 
+/* WILL STYLES */
 
+#Will{
+
+	h3 {font-family: @handwriting-font;
+		text-shadow: 0px 0px 1px lighten(@brown-color, 15%);
+		color: @brown-color;
+		font-weight: normal;
+		font-weight: 700;
+	
+	}
+
+	font-family: @handwriting-font;
+	color: @brown-color;
+	font-size: 18px;
+	text-shadow: 0px 0px 1px lighten(@brown-color, 15%);
+	background-image: url('images/will-background.png');
+	background-size: 20%;
+	font-weight: 700;
+	line-height: 21px;
+	
+	padding: 0.5em 1em;
+	border: 2px solid darken(@brown-color, 5%);
+}
