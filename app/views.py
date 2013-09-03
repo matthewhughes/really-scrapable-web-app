@@ -57,6 +57,9 @@ def challengeeight():
     else:
         return render_template('challengeeight.html')
 
+@app.route('/challengenine')
+def challengenine():
+    return render_template('challengenine.html')
 
 @app.route('/api/<standard>')
 def api(standard):

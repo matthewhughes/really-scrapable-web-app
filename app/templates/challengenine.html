@@ -31,6 +31,7 @@
 			<a href="/challengeseven">Challenge Seven</a>
 			<a href="/challengeeight">Challenge Eight</a>
 			<a href="/Challengenine">Challenge Nine</a>
+			
 		</nav>
 	</div>
 	
@@ -38,15 +39,22 @@
 
 	<div class="span7">
 
-		<h2>Challenge Three - Scrape this Javascript rendered table</h2>
-		<p>This table is rendered in Javascript. You will be unable to scrape it using lxml or xpath.</p>
+		<h2>Challenge Nine - Scrape this obfuscated table</h2>
+		<p>I was feeling pretty mean, and I decided to use the same old table as before, but make it especially horrid. If you view source, you'll see that it is rendered in Javascript. Not only that, but it is rendered in <i>obfuscated</i> JavaScript.</p> 
+
+		<p>Scraping this will not be easy.</p>
+
+		<p>I decided to be nice and leave off the dates. You've got enough to be getting on with already! Your challenge is to work out how to scrape it.</p> 
+		<p>Hint: Selenium is your friend.</p>
 
 	</div>
 
 	<div class="span7">
-		
-		<script type="text/javascript">
-		document.write(tableName)
+
+		<script type='text/javascript'>
+		<!--
+		var s="=ubcmf?!=us?!=ui?Qsfnjfs=0ui?!=ui?Qbsuz=0ui?!=0us?!=us?!=ue?Lfwjo!Svee=0ue?!=ue?Mbcps=0ue?!=0us?!=us?!=ue?Kvmjb!Hjmmbse=0ue?!=ue?Mbcps=0ue?!!!!!=0us?!=us?!=ue?Lfwjo!Svee=0ue?!=ue?Mbcps=0ue?!=0us?!=us?!=ue?Kpio!Ipxbse=0ue?!=ue?Mjcfsbm0Dpbmjujpo=0ue?!=0us?!=us?!=ue?Qbvm!Lfbujoh=0ue?!=ue?Mbcps=0ue?!=0u!!!!s?!=us?!=ue?Cpc!Ibxlf=0ue?!=ue?Mbcps=0ue?!=0us?!=us?!=ue?Nbmdpmn!Gsbtfs=0ue?!=ue?Mjcfsbm0Dpbmjujpo=0ue?!=0us?!=us?!=ue?Hpvhi!Xijumbn=0ue?!=ue?Mbcps=0ue?!=0us!!!!?!=us?!=ue?Xjmmjbn!NdNbipo=0ue?!=ue?Mjcfsbm0Dpbmjujpo=0ue?!=0us?!=us?!=ue?Kpio!Hpsupo=0ue?!=ue?Mjcfsbm0Dpbmjujpo=0ue?!=0us?!=0ubcmf?";
+		m=""; for (i=0; i<s.length; i++) {	if(s.charCodeAt(i) == 28){	  m+= '&';} else if (s.charCodeAt(i) == 23) {	  m+= '!';} else {	  m+=String.fromCharCode(s.charCodeAt(i)-1);	}}document.write(m);//-->
 		</script>
 
 	</div>
