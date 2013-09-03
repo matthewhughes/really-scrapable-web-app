@@ -44,6 +44,10 @@ def challengesix():
     return render_template('challengesix.html', form = form)
 '''
 
+@app.route('/challengeseven')
+def challengeseven():
+    return render_template('challengeseven.html')
+
 @app.route('/api/<standard>')
 def api(standard):
     if standard == 'json':
