@@ -56,9 +56,10 @@ def challengeseven():
 @app.route('/challengeeight')
 def challengeeight():
     user_agent = request.user_agent.browser
-    if user_agent == 'chrome' or user_agent == 'firefox' or user_agent == 'msie':
+    version = request.user_agent.version and int(request.user_agent.version.split('.')[0])
+    if user_agent == 'chrome' or user_agent == 'firefox' or user_agent == 'safari' or user_agent == 'opera':
         return render_template('challengeeightno.html')
-    else:
+    elif user_agent == 'msie' and version == 6:
         return render_template('challengeeight.html')
 
 @app.route('/challengenine')
