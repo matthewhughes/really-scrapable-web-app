@@ -19,6 +19,10 @@ def contactus():
 def copyright():
     return render_template('copyright.html')
 
+@app.route('/challengeindex')
+def challengeindex():
+    return render_template('challengeindex.html')
+
 @app.route('/challengeone')
 def challengeone():
     return render_template('challengeone.html')
