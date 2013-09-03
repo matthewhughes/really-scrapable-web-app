@@ -1,4 +1,5 @@
 from flask import render_template #, flash, redirect
+from flask import request
 from app import app
 # from forms import LoginForm
 
@@ -47,6 +48,15 @@ def challengesix():
 @app.route('/challengeseven')
 def challengeseven():
     return render_template('challengeseven.html')
+
+@app.route('/challengeeight')
+def challengeeight():
+    user_agent = request.user_agent.browser
+    if user_agent == 'chrome' or user_agent == 'firefox' or user_agent == 'msie':
+        return render_template('challengeeightno.html')
+    else:
+        return render_template('challengeeight.html')
+
 
 @app.route('/api/<standard>')
 def api(standard):
