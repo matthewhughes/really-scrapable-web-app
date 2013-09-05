@@ -1,6 +1,8 @@
 from flask import render_template #, flash, redirect
 from flask import request
+from flask import Markup
 from app import app
+import challengeten
 # from forms import LoginForm
 
 PRIME_MINISTER = {'name': "Kevin Rudd", 'age': 55, 'party': "labor", 'country': "Australia", 'children': 3 }
@@ -69,6 +71,23 @@ def challengeeight():
 @app.route('/challengenine')
 def challengenine():
     return render_template('challengenine.html')
+
+@app.route('/challengeten')
+def challenge_ten():
+    return render_template ('challengeten.html')
+
+@app.route('/challengeten/<page>/')
+def challengetenpage(page):
+    if not page:
+        return render_template('challengeten.html', content = Markup(challengeten.zero))
+    elif page == "1":
+        return render_template('challengeten.html', content = Markup(challengeten.one))
+    elif page == "2":
+        return render_template('challengeten.html', content = Markup(challengeten.two))
+    elif page == "3":
+        return render_template('challengeten.html', content = Markup(challengeten.three))
+    else:
+        return render_template('challengeten.html', content = Markup("<p> No content found </p>"))
 
 @app.route('/api/<standard>')
 def api(standard):
