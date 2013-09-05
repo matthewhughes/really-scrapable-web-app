@@ -79,15 +79,15 @@ def challenge_ten():
 @app.route('/challengeten/<page>/')
 def challengetenpage(page):
     if not page:
-        return render_template('challengeten.html', content = Markup(challengeten.zero))
+        return render_template('challengeten.html', content = challengeten.zero)
     elif page == "1":
-        return render_template('challengeten.html', content = Markup(challengeten.one))
+        return render_template('challengeten.html', content = challengeten.one)
     elif page == "2":
-        return render_template('challengeten.html', content = Markup(challengeten.two))
+        return render_template('challengeten.html', content = challengeten.two)
     elif page == "3":
-        return render_template('challengeten.html', content = Markup(challengeten.three))
+        return render_template('challengeten.html', content = challengeten.three)
     else:
-        return render_template('challengeten.html', content = Markup("<p> No content found </p>"))
+        return render_template('challengeten.html', content = "No content found")
 
 @app.route('/api/<standard>')
 def api(standard):
