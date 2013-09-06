@@ -9,7 +9,7 @@ The really scrapable web app runs on localhost.
 1. Clone this repo locally:
 
     ```
-    git clone git@github.com:zarino/really-scrapable-web-app.git
+    git clone git@github.com:matthewhughes/really-scrapable-web-app.git
     ```
 
 2. (optional but encouraged) Set up a virtualenv:
