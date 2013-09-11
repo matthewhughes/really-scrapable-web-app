@@ -31,3 +31,8 @@ The really scrapable web app runs on localhost.
     ```
     ./run.py
     ```
+5. Open your web browser and navigate to RSWA:
+    ```
+    http://localhost:5000/
+    ```
+
