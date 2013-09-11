@@ -1,45 +1,8 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head> <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'> <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+{% extends 'base.html' %}
 
-    <link rel="stylesheet" href="/static/style.css" type="text/css">
-
-    <link rel="stylesheet" href="/static/bootstrap.css" type="text/css">
-    
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<meta charset="UTF-8">
-	<title>Welcome to Really Scrapable Web App</title>
-</head>
-<body>
-	<div class="header-container">
-		<header>
-			<a href="/">Home</a>
-			<a href="/contactus">Contact Us</a>
-			<a href="/copyright">Copyright</a>
-		<a href="/challengeindex"> List of challenges </a> </header>
-			<nav>
-					<a href="/challengeone">1</a>
-					<a href="/challengetwo">2</a>
-					<a href="/challengethree">3</a>
-					<a href="/challengefour">4</a>
-					<a href="/challengefive">5</a>
-					<a href="/challengesix">6</a>
-					<a href="/challengeseven">7</a>
-					<a href="/challengeeight">8</a>
-					<a href="/challengenine">9</a>
-					<a href="/challengeten">10</a>
-			</nav>
-
-	</div>
-	<section class="container-fluid">
+{% block content %}
 		<h2>Ruh roh.</h2>
 		<p>I'll fess up. This exercise has been deactivated. For whatever reason, it worked fine on OS X but somehow happens to break the app on computers running Ubuntu Linux. Yeah, pretty bad, I know. If you're on a Mac, or you're feeling ambitious and you want to have a go at fixing whatever is causing RSWA to fail, please uncomment everything in forms.py and views.py.</p>
 		<p>There is a thread on <a href="http://stackoverflow.com/questions/18301315/flask-on-ubuntu-is-unable-to-find-flask-json">Stack Overflow</a> about this frustrating little problem, and you can always <a href="/contactus">get in touch with us</a> if you want to talk to us about it.</p>
-	</section>
-	<div class="footer-container">
-	<footer>
-	<p>Made with love by <a href="http://www.matthewhughes.co.uk">Matthew Hughes</a> in Liverpool and <a href="http://dillywilly.com">Nadil Bourkadi</a> in Essex.</p>
-	</footer>
-</div>
-</body>
-</html>
+
+{% endblock %}

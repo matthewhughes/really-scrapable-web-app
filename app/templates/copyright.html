@@ -1,38 +1,7 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head> <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'> <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+{% extends 'base.html' %}
 
-    <link rel="stylesheet" href="/static/style.css" type="text/css">
+{% block content %}
 
-    <link rel="stylesheet" href="/static/bootstrap.css" type="text/css">
-    
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<meta charset="UTF-8">
-	<title>Welcome to Really Scrapable Web App</title>
-</head>
-<body>
-
-	<div class="main-container">
-<div class="header-container">
-		<header>
-			<a href="/">Home</a>
-			<a href="/contactus">Contact Us</a>
-			<a href="/copyright">Copyright</a>
-		<a href="/challengeindex"> List of challenges </a> </header>
-		<nav>
-				<a href="/challengeone">1</a>
-				<a href="/challengetwo">2</a>
-				<a href="/challengethree">3</a>
-				<a href="/challengefour">4</a>
-				<a href="/challengefive">5</a>
-				<a href="/challengesix">6</a>
-				<a href="/challengeseven">7</a>
-				<a href="/challengeeight">8</a>
-				<a href="/challengenine">9</a>
-				<a href="/challengeten">10</a>
-		</nav>
-	</div>
-	<section class="container-fluid">
 		<h2>MIT License</h2>
 		<p>Copyright (c) 2013 Matthew Hughes and Nadil Bourkadi</p>
 		<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -51,12 +20,5 @@
 			IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 			CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		</p>
-	</section>
-	</div>
-<div class="footer-container">
-<footer>
-	<p>Made with love by <a href="http://www.matthewhughes.co.uk">Matthew Hughes</a> in Liverpool and <a href="http://dillywilly.com">Nadil Bourkadi</a> in Essex.</p>
-	</footer>
-</div>
-</body>
-</html>
+
+		{% endblock %}
